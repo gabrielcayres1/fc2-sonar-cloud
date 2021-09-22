@@ -1,13 +1,13 @@
 name: ci-sonarcloud
-on: 
-  pull_request: 
-    branches: 
-      -develop
+on:
+  pull_request:
+    branches:
+      - develop
 
-jobs: 
+jobs:
   run-ci:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
         with:
